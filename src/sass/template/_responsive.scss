@@ -1,0 +1,311 @@
+/************** NAVBAR TOGGLE MENU MOBİLE **************/
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    visibility: hidden;
+    position: absolute;
+    top: -35px;
+    right: -10px;
+    height: calc(100vh + 35px) !important;
+    width: 0%;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    li {
+      transition: 400ms;
+      transform: translateX(220px);
+      margin: 1.5rem !important;
+    }
+    .theme-switch {
+      transition: 400ms;
+      transform: translateX(220px);
+      margin: 1.5rem !important;
+    }
+
+    &.nav-active {
+      visibility: visible !important;
+      width: 110%;
+      li {
+        transform: translateX(0);
+        &:nth-child(1) {
+          transition-delay: 100ms;
+        }
+        &:nth-child(2) {
+          transition-delay: 200ms;
+        }
+        &:nth-child(3) {
+          transition-delay: 300ms;
+        }
+        &:nth-child(4) {
+          transition-delay: 400ms;
+        }
+      }
+      .theme-switch {
+        transform: translateX(0);
+        transition-delay: 500ms;
+      }
+    }
+  }
+  .toggle {
+    visibility: visible;
+  }
+
+  /* Body Dark Theme */
+  .theme-switch {
+    width: 52px !important;
+    height: 24px !important;
+    .switch {
+      width: 18px !important;
+      height: 18px !important;
+    }
+  }
+  .dark-theme {
+    .theme-switch {
+      .switch {
+        transform: translateX(26px);
+      }
+    }
+  }
+
+  /* Section */
+  section {
+    margin-top: 140px !important;
+    .container {
+      h2 {
+        img {
+          width: 60%;
+        }
+      }
+      .contact {
+        a {
+          font-size: 12px !important;
+        }
+        .normal {
+          min-width: 140px;
+        }
+        .outline {
+          margin-left: 5px !important;
+          min-width: 155px !important;
+          padding: 13px 18px !important;
+        }
+      }
+      .person-one {
+        .person-image {
+          padding-top: 45px;
+        }
+        .circle-image {
+          top: 25px !important;
+        }
+      }
+    }
+  }
+
+  /* About Me */
+  .about-me {
+    margin-top: 60px !important;
+    .container {
+      .before-color {
+        padding: 0 !important;
+        .row {
+          .col-lg-6 {
+            .content-top {
+              .positive-reviews {
+                margin: 10px 0 0 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* My Project */
+  .my-projects {
+    margin-top: 20px !important;
+    .container {
+      .row {
+        figure {
+          margin: 25px 0 20px 0 !important;
+          height: 70% !important;
+        }
+        .title {
+          margin-left: 10px;
+          h2 {
+            font-size: 42px !important;
+          }
+          button {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Why Hire Me */
+  .why-hire-me {
+    .container {
+      .title {
+        margin-left: 10px;
+      }
+      .comp {
+        h3 {
+          font-size: 18px !important;
+        }
+        p {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  /* Cta */
+  .cta {
+    margin: 100px 10px 0 10px;
+    .container {
+      padding: 40px 0;
+      h3 {
+        font-size: 42px !important;
+      }
+      .d-flex {
+        margin-top: 16px;
+        flex-direction: column;
+        .more {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  /* Brand */
+  .brand {
+    .container {
+      a {
+        width: 40px;
+      }
+    }
+  }
+
+  /* Comments */
+  .comments {
+    padding: 30px 0 !important;
+    .container {
+      padding: 0 10px 0 10px !important;
+      &::before,
+      &::after {
+        content: none;
+      }
+      .redux {
+        .title-top {
+          h3 {
+            font-size: 24px;
+          }
+        }
+        .swiper-container {
+          padding-top: 0 !important;
+          .swiper-slide {
+            .content {
+              padding: 10px 15px;
+              p {
+                padding: 0 10px;
+                font-size: 15px;
+                height: 120px;
+              }
+              .title-bottom {
+                h4 {
+                  min-width: 120px;
+                  font-size: 12px;
+                  line-height: 14px;
+                }
+                h5 {
+                  min-width: 120px;
+                  font-size: 10px;
+                  line-height: 14px;
+                }
+              }
+              .profile {
+                .voting {
+                  padding: 0 10px 0 0px;
+                  .ratings {
+                    margin-left: 4px;
+                    .star {
+                      &::before {
+                        font-size: 20px !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .send-comments {
+    .container {
+      .col-lg-6 {
+        h3 {
+          margin-top: 10px;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    .container {
+      .content {
+        flex-direction: column;
+        .col-lg-4 {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .center {
+          margin-left: 0 !important;
+          a {
+            &:first-child {
+              padding: 0;
+            }
+          }
+        }
+        .end {
+          justify-content: flex-start !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* Comments */
+  .comments {
+    .content {
+      .title-bottom {
+        h4 {
+          min-width: 110px !important;
+        }
+        h5 {
+          min-width: 110px !important;
+        }
+      }
+      .profile {
+        .voting {
+          padding: 0 !important;
+          .ratings {
+            .star {
+              &::before {
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
